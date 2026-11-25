@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bryce Hecht</title>
-<meta name="description" content="Academic homepage of Bryce Hecht — research, publications, and teaching.">
+<title>Bryce W. Hecht</title>
+<meta name="description" content="Bryce W. Hecht is a postdoctoral research fellow at the Institute for European Policymaking, Bocconi University, studying political institutions, authoritarian power sharing, and political behavior.">
 
-<!-- Social preview (optional: point image at a real URL once hosted) -->
-<meta property="og:title" content="Bryce Hecht">
-<meta property="og:description" content="Academic homepage — research, publications, and teaching.">
+<meta property="og:title" content="Bryce W. Hecht">
+<meta property="og:description" content="Postdoctoral research fellow at the Institute for European Policymaking, Bocconi University.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://brycehecht.github.io">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -133,6 +133,8 @@ h1 {
 .title a { color: var(--text-mute); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; }
 .title a:hover { color: var(--accent); }
 
+.tagline { color: var(--text-mute); font-size: 0.95rem; margin: 0; }
+
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +197,7 @@ p:last-child { margin-bottom: 0; }
   padding-top: 0.08rem;
 }
 
-/* ---------- Research cards ---------- */
+/* ---------- Research ---------- */
 .research { display: grid; gap: 1.75rem; }
 .research > div { padding-left: 1rem; border-left: 2px solid var(--rule); }
 .research p { color: var(--text-mute); font-size: 0.96rem; margin: 0; }
@@ -232,20 +234,19 @@ p:last-child { margin-bottom: 0; }
   margin-left: 0.4rem;
 }
 
-.year-head {
+.group-head {
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--text-fade);
-  font-variant-numeric: tabular-nums;
   margin: 0 0 1.1rem;
   padding-bottom: 0.4rem;
   border-bottom: 1px solid var(--rule);
 }
-.year-head:not(:first-of-type) { margin-top: 2.25rem; }
+.group-head:not(:first-of-type) { margin-top: 2.25rem; }
 
 /* ---------- Teaching ---------- */
 .teaching { display: grid; gap: 1.25rem; }
-.course .term { font-size: 0.86rem; color: var(--text-fade); font-variant-numeric: tabular-nums; }
+.course .term { font-size: 0.86rem; color: var(--text-fade); font-variant-numeric: tabular-nums; font-weight: 400; }
 .course p { color: var(--text-mute); font-size: 0.94rem; margin: 0.15rem 0 0; }
 
 /* ---------- Footer ---------- */
@@ -281,7 +282,7 @@ footer a { color: var(--text-fade); text-decoration: underline; text-decoration-
 
 <nav>
   <div class="wrap">
-    <a class="brand" href="#">Bryce Hecht</a>
+    <a class="brand" href="#">Bryce W. Hecht</a>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#research">Research</a></li>
@@ -294,24 +295,23 @@ footer a { color: var(--text-fade); text-decoration: underline; text-decoration-
 
 <header>
   <div class="wrap hero">
-    <!-- Replace with your photo: a square JPG/PNG, ~600×600px, named photo.jpg -->
-    <img src="photo.jpg" alt="Bryce Hecht" onerror="this.style.display='none'">
+    <!-- Add a square photo named photo.jpg to the repo root. Hides itself if absent. -->
+    <img src="photo.jpg" alt="Bryce W. Hecht" onerror="this.style.display='none'">
     <div>
-      <h1>Bryce Hecht</h1>
+      <h1>Bryce W. Hecht</h1>
       <p class="title">
-        TODO — Position, e.g. PhD Candidate<br>
-        Department of TODO, <a href="#">University Name</a>
+        Post-Doctoral Research Fellow<br>
+        <a href="https://www.unibocconi.it/en/research/institute-european-policymaking">Institute for European Policymaking</a>, Bocconi University
       </p>
-      <p style="color:var(--text-mute); font-size:0.95rem; margin:0;">
-        TODO — one sentence on what you work on. Example: “I study how X shapes Y, using Z methods.”
+      <p class="tagline">
+        I study how political power is organized, exercised, and contested — in democracies
+        and in authoritarian regimes alike.
       </p>
       <div class="links">
-        <a href="mailto:hechtbryce9@gmail.com">Email</a>
+        <a href="mailto:bryce.hecht@unibocconi.it">Email</a>
         <a href="cv.pdf">CV</a>
         <a href="https://scholar.google.com/citations?user=TODO">Google Scholar</a>
-        <a href="https://github.com/TODO">GitHub</a>
-        <a href="https://orcid.org/TODO">ORCID</a>
-        <a href="https://bsky.app/profile/TODO">Bluesky</a>
+        <a href="https://www.linkedin.com/in/TODO">LinkedIn</a>
       </div>
     </div>
   </div>
@@ -323,23 +323,34 @@ footer a { color: var(--text-fade); text-decoration: underline; text-decoration-
   <div class="wrap">
     <h2>About</h2>
     <p class="lead">
-      TODO — Two or three paragraphs. Open with your research question in plain language;
-      a non-specialist should understand the first sentence.
+      I am a postdoctoral research fellow at the Institute for European Policymaking at
+      Bocconi University in Milan, where I work with Professor Guido Tabellini. My research
+      examines how political power is organized, exercised, and contested in both democratic
+      and non-democratic settings.
     </p>
     <p>
-      TODO — Second paragraph: methods, field sites, data, or theoretical commitments.
-      Mention your advisor, lab, or affiliations here if relevant.
+      Much of my work asks why authoritarian rulers build institutions that appear to
+      constrain them — legislatures, parties, formal channels for opposition — and what those
+      institutions actually do once they exist. A parallel strand looks at political behavior
+      in democracies: how people form attachments to radical parties, and what happens when
+      political discussion is suppressed rather than engaged. I work primarily on
+      post-communist Europe, and I draw on causal inference, formal theory, and computational
+      methods including natural language processing.
     </p>
     <p>
-      TODO — Optional third: background, prior degrees, or a note on what you're looking for
-      (collaborators, students, postdoc positions).
+      I earned my Ph.D. in Political Science from the University of North Carolina at Chapel
+      Hill in 2026, with subfields in comparative politics and methodology. I also hold an
+      M.A. in Political Science from UNC and an M.A. in Russian and East European Studies from
+      Indiana University Bloomington. I am always glad to hear from potential collaborators.
     </p>
 
     <h2 style="margin-top:2.5rem;">News</h2>
     <ul class="news">
-      <li><time datetime="2026-08">Aug 2026</time><span>TODO — Paper accepted at <em>Venue</em>.</span></li>
-      <li><time datetime="2026-05">May 2026</time><span>TODO — Presented at Conference Name.</span></li>
-      <li><time datetime="2026-01">Jan 2026</time><span>TODO — New preprint available.</span></li>
+      <li><time datetime="2027-02">Feb 2027</time><span>Presenting at the Department of Political and Social Sciences, University of Bologna.</span></li>
+      <li><time datetime="2026-09">Sep 2026</time><span>Joined the Institute for European Policymaking at Bocconi University as a post-doctoral research fellow.</span></li>
+      <li><time datetime="2026-05">May 2026</time><span>Completed my Ph.D. in Political Science at UNC Chapel Hill.</span></li>
+      <li><time datetime="2026-02">Feb 2026</time><span>Presented at the Authoritarian Politics Workshop.</span></li>
+      <li><time datetime="2025-01">2025</time><span>&ldquo;Revisiting the Relationship Between Legislative Power Sharing and Autocratic Survival&rdquo; published in <em>Comparative Political Studies</em>.</span></li>
     </ul>
   </div>
 </section>
@@ -349,17 +360,32 @@ footer a { color: var(--text-fade); text-decoration: underline; text-decoration-
     <h2>Research</h2>
     <div class="research">
       <div>
-        <h3>TODO — Research Area One</h3>
-        <p>Two or three sentences on the question, why it matters, and how you approach it.
-           Link to the relevant papers below.</p>
+        <h3>Authoritarian Institutions and Power Sharing</h3>
+        <p>
+          Autocrats routinely create legislatures and tolerate organized opposition, which
+          seems to cut against their interest in unconstrained rule. I study when power
+          sharing of this kind actually stabilizes a regime, how it alters the survival
+          prospects of the ruler, and how opposition legislators choose between loyalty and
+          dissent once they are inside the institution.
+        </p>
       </div>
       <div>
-        <h3>TODO — Research Area Two</h3>
-        <p>Two or three sentences.</p>
+        <h3>Political Behavior and the Radical Right</h3>
+        <p>
+          Why do voters support populist radical right parties, and what role does political
+          discussion play in shaping those attachments? Related work examines the downstream
+          effects of restricting conversation about contested political topics, both in
+          classrooms and beyond them — a question with direct implications for how
+          institutions handle disagreement.
+        </p>
       </div>
       <div>
-        <h3>TODO — Research Area Three</h3>
-        <p>Two or three sentences.</p>
+        <h3>European Constitutional Governance</h3>
+        <p>
+          An ongoing book project, with Anna Bassi, on the constitutional foundations of
+          European government: how the formal architecture of the European project structures
+          authority, and what that structure means for accountability and policymaking.
+        </p>
       </div>
     </div>
   </div>
@@ -369,41 +395,41 @@ footer a { color: var(--text-fade); text-decoration: underline; text-decoration-
   <div class="wrap">
     <h2>Publications</h2>
 
-    <p class="year-head">2026</p>
+    <p class="group-head">Peer-Reviewed Articles</p>
     <div class="pubs">
       <article class="pub">
-        <h3>TODO — Title of the Paper<span class="tag">Preprint</span></h3>
-        <p class="authors"><span class="me">B. Hecht</span>, A. Coauthor, &amp; C. Coauthor</p>
-        <p class="venue">Journal or Conference Name</p>
+        <h3>Revisiting the Relationship Between Legislative Power Sharing and Autocratic Survival</h3>
+        <p class="authors"><span class="me">B. W. Hecht</span></p>
+        <p class="venue">Comparative Political Studies, 59(13), 2890&ndash;2927 (2025)</p>
         <div class="meta">
-          <a href="#">PDF</a>
-          <a href="#">DOI</a>
-          <a href="#">Code</a>
-          <a href="#">Data</a>
-        </div>
-      </article>
-
-      <article class="pub">
-        <h3>TODO — Another Paper Title</h3>
-        <p class="authors">A. Coauthor &amp; <span class="me">B. Hecht</span></p>
-        <p class="venue">Journal Name, 12(3), 45–67</p>
-        <div class="meta">
-          <a href="#">PDF</a>
+          <!-- Add the DOI and a hosted PDF when you have them -->
           <a href="#">DOI</a>
         </div>
       </article>
     </div>
 
-    <p class="year-head">2025</p>
+    <p class="group-head">Under Review &amp; Working Papers</p>
     <div class="pubs">
       <article class="pub">
-        <h3>TODO — Earlier Paper Title</h3>
-        <p class="authors"><span class="me">B. Hecht</span></p>
-        <p class="venue">Journal Name, 8(1), 1–24</p>
-        <div class="meta">
-          <a href="#">PDF</a>
-          <a href="#">DOI</a>
-        </div>
+        <h3>Just Don&rsquo;t Talk About It: The Effects of Blocking Discussions About Controversial Political Topics in and Outside Classrooms<span class="tag">R&amp;R</span></h3>
+        <p class="authors"><span class="me">B. W. Hecht</span> &amp; M. Tarillo</p>
+        <p class="venue">Revise &amp; Resubmit, PS: Political Science &amp; Politics</p>
+      </article>
+
+      <article class="pub">
+        <h3>Loyalty Versus Dissent: Opposition Behavior in Authoritarian Legislatures<span class="tag">Under Review</span></h3>
+        <p class="authors"><span class="me">B. W. Hecht</span></p>
+        <p class="venue">Under Review, Journal of Legislative Studies</p>
+      </article>
+
+      <article class="pub">
+        <h3>The Constitutional Foundations of European Government<span class="tag">Book Project</span></h3>
+        <p class="authors"><span class="me">B. W. Hecht</span> &amp; A. Bassi</p>
+      </article>
+
+      <article class="pub">
+        <h3>Support for Populist Radical Right Parties<span class="tag">In Progress</span></h3>
+        <p class="authors"><span class="me">B. W. Hecht</span> &amp; G. Tabellini</p>
       </article>
     </div>
   </div>
@@ -414,17 +440,24 @@ footer a { color: var(--text-fade); text-decoration: underline; text-decoration-
     <h2>Teaching</h2>
     <div class="teaching">
       <div class="course">
-        <h3>TODO — Course Title <span class="term">· Fall 2026</span></h3>
-        <p>Role (instructor of record / TA). One line on the content or level.
-           <a href="#">Syllabus</a></p>
+        <h3>POLI 281: Data in Politics I <span class="term">· Fall 2025</span></h3>
+        <p>Instructor of record. Introduction to quantitative methods and data analysis for
+           political science. UNC Chapel Hill.</p>
       </div>
       <div class="course">
-        <h3>TODO — Course Title <span class="term">· Spring 2026</span></h3>
-        <p>Role. One line on content.</p>
+        <h3>POLI 130: Introduction to Comparative Politics <span class="term">· Summer 2024, 2025</span></h3>
+        <p>Instructor of record. UNC Chapel Hill. Also served as teaching assistant for this
+           course, 2020&ndash;2022.</p>
+      </div>
+      <div class="course">
+        <h3>POLI 203: Race, Innocence, and the Decline of the Death Penalty <span class="term">· Spring 2025</span></h3>
+        <p>Teaching assistant. UNC Chapel Hill.</p>
       </div>
     </div>
     <p style="margin-top:1.75rem; color:var(--text-mute); font-size:0.94rem;">
-      <strong style="color:var(--text);">Office hours:</strong> TODO — day, time, location, or “by appointment.”
+      Recipient of the Chancellor&rsquo;s Student Undergraduate Teaching and Staff Award (2024)
+      and the Wallace Award for Best Teaching Assistant (2022, 2023), Department of Political
+      Science, UNC Chapel Hill.
     </p>
   </div>
 </section>
@@ -433,7 +466,8 @@ footer a { color: var(--text-fade); text-decoration: underline; text-decoration-
 
 <footer>
   <div class="wrap">
-    Last updated August 2026 · <a href="https://github.com/TODO/TODO">Source</a>
+    Last updated November 2026 ·
+    <a href="https://github.com/brycehecht/brycehecht.github.io">Source</a>
   </div>
 </footer>
 
